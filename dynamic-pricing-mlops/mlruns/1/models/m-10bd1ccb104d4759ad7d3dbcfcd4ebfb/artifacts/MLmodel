@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/laksh/mlops/dynamic_pricing/mlruns/1/models/m-10bd1ccb104d4759ad7d3dbcfcd4ebfb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.1
+model_id: m-10bd1ccb104d4759ad7d3dbcfcd4ebfb
+model_size_bytes: 251598
+model_uuid: m-10bd1ccb104d4759ad7d3dbcfcd4ebfb
+prompts: null
+run_id: e27cab0c31984aaa8f3d0c17afb3fd18
+utc_time_created: '2026-01-04 21:26:40.177021'

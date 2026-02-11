@@ -1,0 +1,25 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: python prepare_data.py
+    deps:
+    - path: prepare_data.py
+      hash: md5
+      md5: 0b9e39ad363f2944ee4f25c7fae45879
+      size: 1745
+    outs:
+    - path: data/gig_pricing.csv
+      hash: md5
+      md5: ee50ea1d667c64d84f85c06f19f5987b
+      size: 77492
+  train_model:
+    cmd: python train.py
+    deps:
+    - path: data/gig_pricing.csv
+      hash: md5
+      md5: ee50ea1d667c64d84f85c06f19f5987b
+      size: 77492
+    - path: train.py
+      hash: md5
+      md5: 911da68892915c8b0095a6814c4fd347
+      size: 3122
